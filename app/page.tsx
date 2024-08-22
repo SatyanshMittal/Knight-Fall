@@ -4,14 +4,17 @@ import HeroSection from '../components/HeroSection';
 import FeaturesSection from '../components/FeaturesSection';
 import RoadmapSection from '../components/RoadmapSection';
 
+import ScrollingCards from '../components/ScrollingCards'; // Import the ScrollingCards component
+
 const HomePage: React.FC = () => {
   return (
     <div>
-      <Navbar />  {/* Include the Navbar at the top */}
+      <Navbar />
       <HeroSection />
       <FeaturesSection />
+      <ScrollingCards />  {/* Add the scrolling cards component here */}
       <RoadmapSection />
- 
+      
     </div>
   );
 };
