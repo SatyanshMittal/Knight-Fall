@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navLeft, .navCenter, .navRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLeft {
+    justify-content: flex-start;
+  }
+  
+  .navCenter {
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .navRight {
+    justify-content: flex-end;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .navButton {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--highlight-color);
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navButton:hover {
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+  }
+  
+  .navButtonPrimary {
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    border: none;
+  }
+  
+  .navButtonPrimary:hover {
+    background-color: var(--accent-color);
+  }
+  
