@@ -1,0 +1,34 @@
+.features {
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .feature-item {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--highlight-color);
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  

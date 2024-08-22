@@ -1,7 +1,18 @@
-import React from 'react'
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import FeaturesSection from '../components/FeaturesSection';
+import RoadmapSection from '../components/RoadmapSection';
 
-export default function page() {
+
+const HomePage: React.FC = () => {
   return (
-    <div>page</div>
-  )
+    <div>
+      <HeroSection />
+      <FeaturesSection />
+      <RoadmapSection />
+      
+    </div>
+  );
 }
+
+export default HomePage;
