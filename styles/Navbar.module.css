@@ -1,59 +1,70 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--secondary-color);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent; /* Make the navbar completely transparent */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navLeft, .navCenter, .navRight {
+  display: flex;
+  align-items: center;
+}
+
+.navLeft {
+  justify-content: flex-start;
+}
+
+.navCenter {
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navRight {
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 60px;
+}
+
+
+.navButton {
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 0.5rem 2.5rem; /* Adjust padding for a curved, pill shape */
+  margin: 0 0.5rem;
+  border-radius: 30px; /* Rounded corners for the button box */
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  border: 2px solid;
+  border-color: var(--highlight-color); /* Ensure the border has the correct color */
+  border-image: none; /* Remove gradient if not needed */
+}
+
+
+.navButton:hover {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+  border-color: var(--highlight-color);
+  border-radius: 30px; /* Ensure hover state keeps rounded corners */
+}
+
+.navButtonPrimary {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
   
-  .navLeft, .navCenter, .navRight {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navLeft {
-    justify-content: flex-start;
-  }
-  
-  .navCenter {
-    justify-content: center;
-    flex-grow: 1;
-  }
-  
-  .navRight {
-    justify-content: flex-end;
-  }
-  
-  .logo {
-    height: 50px;
-  }
-  
-  .navButton {
-    background-color: transparent;
-    color: var(--text-color);
-    border: 2px solid var(--highlight-color);
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .navButton:hover {
-    background-color: var(--highlight-color);
-    color: var(--background-color);
-  }
-  
-  .navButtonPrimary {
-    background-color: var(--highlight-color);
-    color: var(--background-color);
-    border: none;
-  }
-  
-  .navButtonPrimary:hover {
-    background-color: var(--accent-color);
-  }
-  
+  border-image: linear-gradient(45deg, var(--highlight-color), var(--accent-color)) 1;
+  padding: 0.5rem 2.5rem; /* Adjust padding for a curved, pill shape */
+  margin: 0 0.5rem;
+  border-radius: 30px; /* Rounded corners */
+}
+
+.navButtonPrimary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 30px; /* Ensure hover state keeps rounded corners */
+}

@@ -1,0 +1,28 @@
+.homePage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 2rem;
+  background-color: var(--background-color); /* Adjust to fit your design */
+}
+
+.homeText {
+  flex: 1;
+  font-size: 3rem; /* Make the text large and eye-catching */
+  font-weight: bold;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.characters {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem; /* Space between characters */
+}
+
+.character {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto;
+}
