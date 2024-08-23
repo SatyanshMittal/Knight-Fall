@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: transparent; /* Make the navbar completely transparent */
+  background-color: transparent; /* Transparent navbar */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -27,10 +27,14 @@
   justify-content: flex-end;
 }
 
-.logo {
-  height: 60px;
+.navGif {
+  height: 50px;
+  margin-right: 1rem; /* Adjust as needed */
 }
 
+.logo {
+  height: 50px;
+}
 
 .navButton {
   background-color: transparent;
@@ -45,26 +49,23 @@
   border-image: none; /* Remove gradient if not needed */
 }
 
-
 .navButton:hover {
   background-color: var(--highlight-color);
   color: var(--background-color);
   border-color: var(--highlight-color);
-  border-radius: 30px; /* Ensure hover state keeps rounded corners */
 }
 
 .navButtonPrimary {
   background-color: var(--highlight-color);
   color: var(--background-color);
-  
-  border-image: linear-gradient(45deg, var(--highlight-color), var(--accent-color)) 1;
+  border: 2px solid;
+  border-color: var(--highlight-color); /* Ensure the border has the correct color */
   padding: 0.5rem 2.5rem; /* Adjust padding for a curved, pill shape */
   margin: 0 0.5rem;
-  border-radius: 30px; /* Rounded corners */
+  border-radius: 30px; /* Rounded corners for the button box */
 }
 
 .navButtonPrimary:hover {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  border-radius: 30px; /* Ensure hover state keeps rounded corners */
 }

@@ -1,28 +1,64 @@
 .homePage {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   padding: 2rem;
-  background-color: var(--background-color); /* Adjust to fit your design */
+  height: 100vh;
+  background-color: var(--background-color);
 }
 
 .homeText {
-  flex: 1;
+  margin-bottom: 2rem;
   font-size: 3rem; /* Make the text large and eye-catching */
   font-weight: bold;
   color: var(--text-color);
   line-height: 1.2;
 }
 
+.videoFrame {
+  position: relative;
+  width: calc(100% - 680px); /* From left 80px and right 600px */
+  max-width: 800px;
+  height: 450px;
+  margin: 2rem 0;
+  border-radius: 15px; /* Rounded corners */
+  border-image: linear-gradient(45deg, #ff8a00, #da1b60) 1; /* Graphic border */
+  overflow: hidden; /* To keep the video inside the rounded corners */
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire frame */
+  border-radius: 10px;
+}
+
 .characters {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
+  width: 100%;
+  margin-top: 2rem;
   gap: 1rem; /* Space between characters */
 }
 
 .character {
-  max-width: 150px; /* Adjust size as needed */
+  max-width: 150px;
   height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homeText {
+    font-size: 2rem;
+  }
+
+  .videoFrame {
+    width: calc(100% - 160px); /* Adjust for smaller screens */
+    height: 300px;
+  }
+
+  .characters {
+    justify-content: center;
+  }
 }
