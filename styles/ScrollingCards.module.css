@@ -6,6 +6,81 @@
   width: 100%;
   padding: 2rem 0;
 }
+.scrollingCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.characters, .maps {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.characters {
+  animation: scrollLeftToRight 15s linear infinite; /* Left to right scrolling animation */
+  margin-bottom: 3rem;
+}
+
+.maps {
+  animation: scrollRightToLeft 30s linear infinite; /* Right to left scrolling animation */
+}
+
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(-50%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* Move fully on-screen */
+  }
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(0); /* Start on-screen */
+  }
+  100% {
+    transform: translateX(-50%); /* Move fully off-screen */
+  }
+}
+
+.container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.mapVideo {
+  width: 400px; /* Increased width */
+  height: auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 1rem;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 400px; /* Increased width to match video size */
+  box-sizing: border-box;
+}
+
+/* Duplicating cards to create a seamless loop effect */
+.characters::after, .maps::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(transparent, transparent);
+}
 
 .characters, .maps {
   display: flex;

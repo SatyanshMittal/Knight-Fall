@@ -17,8 +17,7 @@ const HomePage: React.FC = () => {
       <FeaturesSection />
       <ScrollingCards />  {/* Add the scrolling cards component here */}
 
-      <HeroCharacters />
-      <RoadmapSection />
+    
     </div>
   );
 };
