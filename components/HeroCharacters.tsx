@@ -1,5 +1,5 @@
 import React from 'react'
-import { CharacterOne } from './character1'
+import  CharacterOne  from './character1'
 const  HeroCharacters: React.FC = () => {
   return (
     <div className='h-screen w-full flex flex-col'>

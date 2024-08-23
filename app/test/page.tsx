@@ -1,10 +1,10 @@
-//@ts-nocheck
+  //@ts-nocheck
 // "use client"
 import React from "react";
 // import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
 // import { useWallet } from "@aptos-labs/wallet-adapter-react";
 // import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
-import {CharacterOne} from "@/components/character1"
+import CharacterOne from "@/components/character1"
 import HeroCharacters from "@/components/HeroCharacters";
 
 
