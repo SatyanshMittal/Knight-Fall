@@ -11,5 +11,5 @@ const WaitlistPage: React.FC = () => {
     </div>
   );
 };
-
+//o
 export default WaitlistPage;
