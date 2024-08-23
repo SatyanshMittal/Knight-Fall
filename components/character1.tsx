@@ -1,6 +1,6 @@
 import Spline from '@splinetool/react-spline/next';
 
-export function CharacterOne() {
+export default function CharacterOne() {
   return (
     <main className=''>
       <Spline
