@@ -1,66 +1,67 @@
 .scrollingCards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.characters, .maps {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.characters {
+  animation: scrollLeftToRight 15s linear infinite;
+  margin-bottom: 3rem;
+}
+
+.maps {
+  animation: scrollRightToLeft 30s linear infinite; /* Slowed down for smooth cyclic effect */
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(0);
   }
-  
-  .characters, .maps {
-    display: flex;
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    white-space: nowrap;
+  100% {
+    transform: translateX(-50%); /* Move only by half the width to create a seamless loop */
   }
-  
-  .characters {
-    animation: scrollLeftToRight 15s linear infinite;
-    margin-bottom: 3rem; /* Add margin to create vertical space */
-  }
-  
-  .maps {
-    animation: scrollRightToLeft 15s linear infinite;
-  }
-  
-  @keyframes scrollLeftToRight {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(100%);
-    }
-  }
-  
-  @keyframes scrollRightToLeft {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 0 1rem;
-    display: inline-block;
-    text-align: center;
-    min-width: 150px;
-  }
-  
-  .cardImage {
-    width: 100px;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  
-  .cardName {
-    font-size: 1rem;
-    color: var(--text-color);
-  }
-  
+}
+
+.container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.mapVideo {
+  width: 400px; /* Increased width */
+  height: auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 1rem;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 400px; /* Increased width to match video size */
+  box-sizing: border-box;
+}
+
+/* Duplicating cards to create a smooth loop effect */
+.maps::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(transparent, transparent);
+  animation: scrollRightToLeft 30s linear infinite;
+}
