@@ -2,14 +2,12 @@
 import React from "react";
 import WaitlistForm from "@/components/WaitlistForm";
 
-
-const WaitlistPage: React.FC = () => {
+export default function Page() {
   return (
     <div>
       {/* <WalletSelector /> */}
       <WaitlistForm />
     </div>
-  );
-};
+  )
+}
 
-export default WaitlistPage;
