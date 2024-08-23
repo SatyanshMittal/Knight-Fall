@@ -3,9 +3,9 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Character from "./character1";
-import { OrbitControls } from "@react-three/drei";
-import { Suspense } from "react";
+// import Character from "./character1";
+// import { OrbitControls } from "@react-three/drei";
+// import { Suspense } from "react";
 import Confetti from "react-confetti";
 import styles from '../styles/Navbar.module.css';
 interface WaitlistResponse {
