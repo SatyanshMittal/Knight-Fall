@@ -5,64 +5,42 @@ import styled from "styled-components";
 const Button = () => {
   return (
     <StyledWrapper>
-      <button className="button">Button</button>
+      <button className="button">Click Me</button>
     </StyledWrapper>
   );
 };
 
 const StyledWrapper = styled.div`
   .button {
-  width: 140px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 0px 15px;
-  background-color: red;
-  border-radius: 10px;
+  --button-accent: rgb(153, 0, 255);
   border: none;
-  color: white;
-  position: relative;
-  cursor: pointer;
-  font-weight: 900;
-  transition-duration: .2s;
-  background: linear-gradient(0deg, #000, #272727);
-}
-
-.button:before, .button:after {
-  content: '';
-  position: absolute;
-  left: -2px;
-  top: -2px;
+  padding: 5px 20px;
+  background: var(--button-accent);
+  box-shadow: 0px 5px 0px 0px
+      color-mix(in oklab, var(--button-accent) 80%, black),
+    0px 5px 0px 5px black;
   border-radius: 10px;
-  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: steam 20s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
-
-@keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 400% 0;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
+/* If you want the button to pop up on hover as well */
+/* .button:hover{
+    box-shadow: 0px 10px 0px 2px rgb(159, 0, 0), 0px 10px 0px 5px rgb(0, 0, 0);
+    transform: translateY(-5px);
+} */
+.button:active {
+  box-shadow: 0px 0px 0px 0px color-mix(in oklab, var(--button-accent), black),
+    0px 0px 0px 5px black;
+  transform: translateY(5px);
 }
-
-.button:after {
-  filter: blur(50px);
-}
-
 
 `;
 

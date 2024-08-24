@@ -7,21 +7,13 @@ const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navLeft}>
-        
-        <img src="/gif/knightfalls.gif" alt="Animated GIF" className={styles.navGif} />
-        {/* <button className={styles.navButton}>How to Play</button> */}
         <AnimatedButton/>
       </div>
       <div className={styles.navCenter}>
         <img src="/images/logo.png" alt="App Logo" className={styles.logo} />
       </div>
-      <div className={` flex justify-center gap-10 items-center`}>
-        {/* <button className={`${styles.navButton} ${styles.navButtonPrimary}`}>Play</button> */}
-        <PlayButton/>
+      <div className={styles.navright}>
         <AnimatedButton/>
-        {/* <AnimatedButton/> */}
-        {/* <button className={styles.navButton}>Waitlist</button> */}
-        
       </div>
       
     </nav>
