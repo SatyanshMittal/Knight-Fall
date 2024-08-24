@@ -13,8 +13,10 @@ import { div } from 'three/webgpu';
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <div className='w-full overflow-hidden no-scrollbar relative'>
+      <div className='fixed z-10 top-0'>
       <Navbar />
+      </div>
       <HeroSection />
       <FeaturesSection />
       <ScrollingCards />  {/* Add the scrolling cards component here */}

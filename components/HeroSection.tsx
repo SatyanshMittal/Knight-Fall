@@ -3,13 +3,16 @@ import styles from '../styles/Home.module.css'; // Adjust the path as needed
 import waves from "./WaveAnimation.svg";
 import Image from 'next/image';
 import { FloatingDockDemo } from './Socials';
+import PlayButton from "@/components/buttons/playbutton"
+// import Navbar from './Navbar';
+
 
 
 const Home: React.FC = () => {
   return (
     <div className='relative h-screen'>
       <section
-        className={`${styles.homePage}`}
+        className={`${styles.homePage} `}
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/backgroundhome1.png')`,
           backgroundSize: 'cover',
@@ -17,7 +20,7 @@ const Home: React.FC = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className='w-[90%] absolute z-10'>
+        <div className='w-[90%] absolute top-24 z-10'>
           <div className={`${styles.homeText}`}>
             <h1>Your Eye-Catching Headline</h1>
             <p>Your subtext or additional information goes here.</p>
@@ -41,9 +44,15 @@ const Home: React.FC = () => {
             <img src="/character2.png" alt="Character 2" className={styles.character} />
             <img src="/character3.png" alt="Character 3" className={styles.character} />
           </div> */}
-          <div className="absolute -bottom-[220px] right-0">
+          <div className="absolute -bottom-[220px] right-0 z-10">
             <FloatingDockDemo/>
           </div>
+
+          <div className='bottom-28 absolute right-[6%] scale-110 z-20'>
+          <PlayButton/>
+          </div>
+
+          <Image height={1000} width={1000} alt='characters' className='absolute top-14 -right-[340px]' src={"./images/characterasset.svg"} />
           
         </div>
       </section>
@@ -59,3 +68,4 @@ const Home: React.FC = () => {
 }
 
 export default Home;
+ 
