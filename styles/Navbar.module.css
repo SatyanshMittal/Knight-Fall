@@ -23,9 +23,7 @@
   flex-grow: 1;
 }
 
-.navRight {
-  justify-content: flex-end;
-}
+
 
 .navGif {
   height: 50px;

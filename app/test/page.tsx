@@ -6,6 +6,7 @@ import React from "react";
 // import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
 import CharacterOne from "@/components/character1"
 import HeroCharacters from "@/components/HeroCharacters";
+import AnimatedButton from "@/components/buttons/animated"
 
 
 export default function Page() {
@@ -22,6 +23,7 @@ export default function Page() {
         {/* <WalletSelector /> */}
         <CharacterOne/>
         <HeroCharacters/>
+        <AnimatedButton/>
     </div>
   );
 }
