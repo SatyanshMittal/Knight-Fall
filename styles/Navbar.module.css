@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height : 60px;
   padding: 1rem 2rem;
   background-color: transparent; /* Transparent navbar */
   position: sticky;
@@ -24,14 +25,14 @@
 }
 
 
-
 .navGif {
-  height: 50px;
+  height: 70px;
   margin-right: 1rem; /* Adjust as needed */
 }
 
 .logo {
-  height: 50px;
+  max-height: 50px;
+  width: auto;
 }
 
 .navButton {

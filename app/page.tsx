@@ -7,6 +7,7 @@ import RoadmapSection from '../components/RoadmapSection';
 import HeroCharacters from '@/components/HeroCharacters';
 import ScrollingCards from '../components/ScrollingCards';
 import Footer from '../components/Footer';
+import WaitlistForm from '@/components/WaitlistForm';
 import { div } from 'three/webgpu';
 
 
@@ -17,6 +18,7 @@ const HomePage: React.FC = () => {
       <HeroSection />
       <FeaturesSection />
       <ScrollingCards />  {/* Add the scrolling cards component here */}
+      <WaitlistForm />
       <Footer />
     </div>
   );
