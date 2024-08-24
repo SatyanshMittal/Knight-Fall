@@ -3,10 +3,11 @@ import styles from '../styles/ScrollingCards.module.css';
 import Marquee from 'react-fast-marquee';
 
 const characters = [
-  { id: 1, name: 'Character 1', video: '/map1.mp4' },
-  { id: 2, name: 'Character 2', video: '/map2.mp4' },
-  { id: 3, name: 'Character 3', video: '/map3.mp4' },
-  { id: 4, name: 'Character 4', video: '/map4.mp4' },
+  { id: 1, name: 'Character 1', video: '/ch1.mp4' },
+  { id: 2, name: 'Character 2', video: '/ch2.mp4' },
+  { id: 3, name: 'Character 3', video: '/ch3.mp4' },
+  { id: 4, name: 'Character 4', video: '/ch4.mp4' },
+  { id: 5, name: 'Character 5', video: '/ch5.mp4' },
 ];
 
 const maps = [
