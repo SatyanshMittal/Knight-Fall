@@ -58,7 +58,7 @@ const maps = [
 
 export default function ScrollingCards() {
   return (
-    <div
+    <div className='flex flex-col justify-center '
       style={{
         backgroundImage: 'url(/images/backgroundimageforscroll.png)',
         backgroundSize: 'cover',

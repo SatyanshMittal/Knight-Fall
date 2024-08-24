@@ -78,6 +78,7 @@ const Card = () => {
 const StyledWrapper = styled.div`
   position: relative;
   overflow: hidden;
+  padding: 33px 0px 33px 0px;
 
   .background-video {
     position: absolute;
@@ -149,6 +150,7 @@ const StyledWrapper = styled.div`
   .wave:nth-child(2),
   .wave:nth-child(3) {
     top: 210px;
+    
   }
 
   .playing .wave {
