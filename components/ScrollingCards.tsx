@@ -58,7 +58,17 @@ const maps = [
 
 export default function ScrollingCards() {
   return (
-    <div >
+    <div
+      style={{
+        backgroundImage: 'url(/images/backgroundimageforscroll.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: '100%',
+        height: '100vh',
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
     <Marquee speed={200}>
       <div className={styles.characters}>
         {characters.map((character) => (
