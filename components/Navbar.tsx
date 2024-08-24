@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <div className={styles.navCenter}>
         <img src="/images/logo.png" alt="App Logo" className={styles.logo} />
       </div>
-      <div className={styles.navright}>
+      <div className={styles.navRight}>
         <AnimatedButton/>
       </div>
       

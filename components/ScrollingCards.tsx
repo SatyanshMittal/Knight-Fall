@@ -80,7 +80,8 @@ export default function ScrollingCards() {
               muted
               className={styles.mapVideo}
             />
-            <p>{character.name}</p>
+            <br></br>
+            <p style={{textAlign:'center'}}>{character.name}</p>
           </div>
         ))}
       </div>
@@ -97,7 +98,8 @@ export default function ScrollingCards() {
               muted
               className={styles.mapVideo}
             />
-            <p>{map.name}</p>
+            <br></br>
+            <p style={{textAlign:'center'}}>{map.name}</p>
           </div>
         ))}
       </div>

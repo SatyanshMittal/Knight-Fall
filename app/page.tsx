@@ -14,8 +14,10 @@ import { div } from 'three/webgpu';
 const HomePage: React.FC = () => {
   return (
     <div className='w-full overflow-hidden no-scrollbar relative'>
-      <div className='fixed z-10 top-0'>
-      <Navbar />
+      <div className='fixed z-50 top-0 w-full'>
+        <div className='w-full flex justify-center items-center'>
+          <Navbar />
+          </div>
       </div>
       <HeroSection />
       <FeaturesSection />

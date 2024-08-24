@@ -7,6 +7,7 @@
   background-color: transparent; /* Transparent navbar */
   top: 0;
   z-index: 1000;
+  
 }
 
 .navLeft, .navCenter, .navRight {
@@ -17,6 +18,12 @@
 
 .navLeft {
   justify-content: flex-start;
+  margin-top: 35px;
+}
+
+.navRight {
+  justify-content: flex-start;
+  margin-top: 35px;
 }
 
 .navCenter {
