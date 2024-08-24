@@ -14,7 +14,12 @@
     "@react-three/drei": "^9.111.2",
     "@react-three/fiber": "^8.17.5",
     "@splinetool/react-spline": "^4.0.0",
+    "@tabler/icons-react": "^3.12.0",
     "axios": "^1.7.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.30",
+    "lucide-react": "^0.435.0",
     "next": "14.2.6",
     "petra-plugin-wallet-adapter": "^0.4.5",
     "react": "^18",
@@ -22,6 +27,8 @@
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.5",
     "styled-components": "^6.1.12",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
     "three": "^0.167.1"
   },
   "devDependencies": {

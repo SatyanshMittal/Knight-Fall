@@ -7,6 +7,7 @@ import React from "react";
 import CharacterOne from "@/components/character1"
 import HeroCharacters from "@/components/HeroCharacters";
 import AnimatedButton from "@/components/buttons/animated"
+import { FloatingDockDemo } from "@/components/Socials";
 
 
 export default function Page() {
@@ -24,6 +25,7 @@ export default function Page() {
         <CharacterOne/>
         <HeroCharacters/>
         <AnimatedButton/>
+        <FloatingDockDemo/>
     </div>
   );
 }

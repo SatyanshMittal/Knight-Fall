@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/Home.module.css'; // Adjust the path as needed
 import waves from "./WaveAnimation.svg";
 import Image from 'next/image';
+import { FloatingDockDemo } from './Socials';
 
 
 const Home: React.FC = () => {
@@ -35,11 +36,15 @@ const Home: React.FC = () => {
             </video>
           </div>
 
-          <div className={styles.characters}>
+          {/* <div className={styles.characters}>
             <img src="/character1.png" alt="Character 1" className={styles.character} />
             <img src="/character2.png" alt="Character 2" className={styles.character} />
             <img src="/character3.png" alt="Character 3" className={styles.character} />
+          </div> */}
+          <div className="absolute -bottom-[220px] right-0">
+            <FloatingDockDemo/>
           </div>
+          
         </div>
       </section>
       <Image

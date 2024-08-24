@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Card = () => {
   return (
     <StyledWrapper>
-      <video autoPlay loop muted playsInline className="background-video">
+      <video autoPlay loop muted playsInline className="background-video brightness-50">
         <source src="/backgroundmapvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -88,6 +88,7 @@ const StyledWrapper = styled.div`
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
   }
 
   .card-container {

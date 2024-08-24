@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AptosProvider>
-      <body className={inter.className}>{children}</body>
+      <body className={`{inter.className} dark`}>{children}</body>
       </AptosProvider>
     </html>
   );
