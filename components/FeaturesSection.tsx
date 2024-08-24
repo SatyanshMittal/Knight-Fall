@@ -5,6 +5,10 @@ import styled from "styled-components";
 const Card = () => {
   return (
     <StyledWrapper>
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src="/backgroundmapvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="card-container">
         <div className="e-card playing animate-card">
           <div className="image" />
@@ -72,12 +76,27 @@ const Card = () => {
 };
 
 const StyledWrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
   .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
   }
 
   .e-card {
