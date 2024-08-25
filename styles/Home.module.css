@@ -7,6 +7,27 @@
   height: 100vh;
   background-color: var(--background-color);
 }
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}
+
+.shooterGameUI {
+  animation: vibrate 0.5s infinite;
+}
 
 .homeText {
   margin-bottom: 2rem;
