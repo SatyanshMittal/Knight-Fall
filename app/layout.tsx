@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Nabla } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { AptosProvider } from "@/components/AptosWalletProvider";
+import { Nerko_One } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const nerko = Nerko_One({ 
+  weight: "400",
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AptosProvider>
-      <body className={`{inter.className} dark`}>{children}</body>
+        <body className={`${inter.className} ${nerko.className} dark`}>{children}</body>
       </AptosProvider>
     </html>
   );

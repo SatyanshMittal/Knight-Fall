@@ -22,8 +22,8 @@ const Home: React.FC = () => {
       >
         <div className='w-[90%] absolute top-24 z-10'>
           <div className={`${styles.homeText}`}>
-            <h1>Your Eye-Catching Headline</h1>
-            <p>Your subtext or additional information goes here.</p>
+            <h1 className='font-[--font-nerko]'>A New Era Multiplayer</h1>
+            <p>On-Chain Adventure</p>
           </div>
 
           <div className={styles.videoFrame}>

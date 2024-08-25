@@ -3,18 +3,18 @@ import styles from '../styles/ScrollingCards.module.css';
 import Marquee from 'react-fast-marquee';
 
 const characters = [
-  { id: 1, name: 'Character 1', video: '/ch1.mp4' },
-  { id: 2, name: 'Character 2', video: '/ch2.mp4' },
-  { id: 3, name: 'Character 3', video: '/ch3.mp4' },
-  { id: 4, name: 'Character 4', video: '/ch4.mp4' },
-  { id: 5, name: 'Character 5', video: '/ch5.mp4' },
+  { id: 1, name: 'Lady Seraphina', video: '/ch1.mp4' },
+  { id: 2, name: 'Leo Lancelot', video: '/ch2.mp4' },
+  { id: 3, name: 'Gallant Griff', video: '/ch3.mp4' },
+  { id: 4, name: 'Sir Braveheart ', video: '/ch4.mp4' },
+  { id: 5, name: 'Aria Starblade', video: '/ch5.mp4' },
 ];
 
 const maps = [
-  { id: 1, name: 'Map 1', video: '/map1.mp4' },
-  { id: 2, name: 'Map 2', video: '/map2.mp4' },
-  { id: 3, name: 'Map 3', video: '/map3.mp4' },
-  { id: 4, name: 'Map 4', video: '/map4.mp4' },
+  { id: 1, name: 'Whimsy Woods', video: '/map1.mp4' },
+  { id: 2, name: 'Sunnyglade Meadows', video: '/map2.mp4' },
+  { id: 3, name: 'Pebblebrook Plains', video: '/map3.mp4' },
+  { id: 4, name: 'Moonlit Grove', video: '/map4.mp4' },
 ];
 
 // const ScrollingCards: React.FC = () => {
