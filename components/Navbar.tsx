@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../styles/Navbar.module.css'; // Adjust the path as needed
-import PlayButton from "@/components/buttons/playbutton"
 import AnimatedLeft from "@/components/buttons/animatedLeft"
 import AnimatedRight from "@/components/buttons/animatedRight"
 
