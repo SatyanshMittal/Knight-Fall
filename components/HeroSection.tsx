@@ -6,8 +6,6 @@ import { FloatingDockDemo } from './Socials';
 import PlayButton from "@/components/buttons/playbutton"
 // import Navbar from './Navbar';
 
-
-
 const Home: React.FC = () => {
   return (
     <div className='relative h-screen'>
@@ -21,10 +19,10 @@ const Home: React.FC = () => {
         }}
       >
         <div className='w-[90%] absolute top-24 z-10'>
-          <div className={`${styles.homeText}`}>
-            <h1 className='font-[--font-nerko]'>A New Era Multiplayer</h1>
-            <p>On-Chain Adventure</p>
-          </div>
+        <div className={`${styles.homeText} ${styles.vibrate} ${styles.shiftRight}`}>
+  <h1 className={`font-[--font-nerko] ${styles.textBorder}`}>A New Era Multiplayer</h1>
+  <p className={styles.textBorder}>On-Chain Adventure</p>
+</div>
 
           <div className={styles.videoFrame}>
             <video

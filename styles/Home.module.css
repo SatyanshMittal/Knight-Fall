@@ -7,7 +7,28 @@
   height: 100vh;
   background-color: var(--background-color);
 }
+.shiftRight {
+  margin-left: 120px; /* Adjust the value as needed */
+}
+.textBorder {
+  text-shadow: 
+    -10px -10px 0 #000,  
+    8px -8px 0 #000,
+    -8px 8px 0 #000,
+    10px 10px 0 #000;
+}
+@keyframes vibrate {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
 
+.vibrate {
+  animation: vibrate 0.3s linear infinite;
+}
 .homeText {
   margin-bottom: 2rem;
   font-size: 3rem; /* Make the text large and eye-catching */
