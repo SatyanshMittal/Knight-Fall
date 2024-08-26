@@ -46,9 +46,9 @@ const Home: React.FC = () => {
             <FloatingDockDemo/>
           </div>
 
-          <div className='bottom-28 absolute right-[6%] scale-110 z-20'>
-          <PlayButton/>
-          </div>
+<div className={`bottom-28 absolute right-[6%] scale-110 z-20 ${styles.wobble}`}>
+  <PlayButton/>
+</div>
 
           <Image height={1000} width={1000} alt='characters' className='absolute top-14 -right-[340px]' src={"./images/characterasset.svg"} />
           

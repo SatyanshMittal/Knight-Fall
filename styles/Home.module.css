@@ -10,6 +10,30 @@
 .shiftRight {
   margin-left: 120px; /* Adjust the value as needed */
 }
+@keyframes wobble {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  15% {
+    transform: translateX(-25%) rotate(-10deg);
+  }
+  30% {
+    transform: translateX(20%) rotate(5deg);
+  }
+  45% {
+    transform: translateX(-15%) rotate(-8deg);
+  }
+  60% {
+    transform: translateX(10%) rotate(7deg);
+  }
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+}
+
+.wobble {
+  animation: wobble 1s ease-in-out infinite;
+}
 .textBorder {
   text-shadow: 
     -10px -10px 0 #000,  
