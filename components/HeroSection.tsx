@@ -20,7 +20,7 @@ const Home: React.FC = () => {
       >
         <div className='w-[90%] absolute top-24 z-10'>
         <div className={`${styles.homeText} ${styles.vibrate} ${styles.shiftRight}`}>
-  <h1 className={`font-[--font-nerko] ${styles.textBorder}`}>A New Era Multiplayer</h1>
+  <h1 className={`font-[--font-nerko] ${styles.textBorder} `}>A New Era Multiplayer</h1>
   <p className={styles.textBorder}>On-Chain Adventure</p>
 </div>
 

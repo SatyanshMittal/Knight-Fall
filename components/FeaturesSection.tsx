@@ -17,9 +17,9 @@ const Card = () => {
           <div className="wave" />
           <div className="infotop">
             <img src="images/g1.svg" alt="Icon" className="icon y-axis-movement" style={{ width: '220px', height: '220px',marginTop: '-160px',marginLeft: '-40px' }} />
-            <div className="name" style={{ marginTop: '-40px', fontSize: '24px', fontWeight: 'bold',color: 'black' }}>Epic PvP Thrills</div>
+            <div className="name" style={{ marginTop: '-40px', fontSize: '24px', fontWeight: 'bold',color: 'white' }}>Epic PvP Thrills</div>
             <br></br>
-            <div className="name" style={{ paddingLeft: '20px', paddingRight: '20px',color: 'black' }}>Battle in intense multiplayer showdowns with unique avatars.
+            <div className="name " style={{ paddingLeft: '20px', paddingRight: '20px',color: 'black' }}>Battle in intense multiplayer showdowns with unique avatars.
             Outsmart and conquer your opponents to rise to the top.</div>
           </div>
         </div>
@@ -151,7 +151,7 @@ const StyledWrapper = styled.div`
     font-weight: 100;
     position: relative;
     top: -2em;
-    text-transform: lowercase;
+    
   }
 
   .wave:nth-child(2),
