@@ -17,9 +17,9 @@ const Card = () => {
           <div className="wave" />
           <div className="infotop">
             <img src="images/g1.svg" alt="Icon" className="icon y-axis-movement" style={{ width: '220px', height: '220px',marginTop: '-160px',marginLeft: '-40px' }} />
-            <div className="name" style={{ marginTop: '-40px', fontSize: '24px', fontWeight: 'bold',color: 'white' }}>Epic PvP Thrills</div>
+            <div className="name" style={{ marginTop: '-60px', fontSize: '24px', fontWeight: 'bold',color: 'white' }}>Epic PvP Thrills</div>
             <br></br>
-            <div className="name " style={{ paddingLeft: '20px', paddingRight: '20px',color: 'black' }}>Battle in intense multiplayer showdowns with unique avatars.
+            <div className="name text-xl leading-5 " style={{ paddingLeft: '20px', paddingRight: '20px',color: 'white' }}>Battle in intense multiplayer showdowns with unique avatars.
             Outsmart and conquer your opponents to rise to the top.</div>
           </div>
         </div>
@@ -30,9 +30,9 @@ const Card = () => {
           <div className="wave" />
           <div className="infotop">
             <img src="images/g2.svg" alt="Icon" className="icon y-axis-movement"style={{ width: '220px', height: '220px',marginTop: '-160px',marginLeft: '-40px' }} />
-            <div className="name" style={{ marginTop: '-40px', fontSize: '24px', fontWeight: 'bold',color: 'black' }}>Exclusive NFT Rewards</div>
+            <div className="name" style={{ marginTop: '-60px', fontSize: '24px', fontWeight: 'bold',color: 'white' }}>Exclusive NFT Rewards</div>
             <br></br>
-            <div className="name" style={{ paddingLeft: '20px', paddingRight: '20px',color: 'black' }}>  Win exclusive NFTs that commemorate your victories. Collect and
+            <div className="name text-xl leading-5" style={{ paddingLeft: '20px', paddingRight: '20px',color: 'white' }}>  Win exclusive NFTs that commemorate your victories. Collect and
             trade these digital assets to enhance your in-game legacy.</div>
           </div>
         </div>
@@ -43,9 +43,9 @@ const Card = () => {
           <div className="wave" />
           <div className="infotop">
             <img src="images/g3.svg" alt="Icon" className="icon y-axis-movement" style={{ width: '200px', height: '200px',marginTop: '-140px',marginLeft: '-40px' }} />
-            <div className="name" style={{ marginTop: '-40px', fontSize: '24px', fontWeight: 'bold' ,color: 'black'}}>Blockchain Realism</div>
+            <div className="name" style={{ marginTop: '-60px', fontSize: '24px', fontWeight: 'bold' ,color: 'white'}}>Blockchain Realism</div>
             <br></br>
-            <div className="name" style={{ paddingLeft: '20px', paddingRight: '20px',color: 'black' }}>Enjoy seamless, lifelike gameplay powered by the Stellar chain.
+            <div className="name text-xl leading-5" style={{ paddingLeft: '20px', paddingRight: '20px',color: 'white' }}>Enjoy seamless, lifelike gameplay powered by the Stellar chain.
               Every move is secure, transparent, and part of a stunning visual
               experience.</div>
           </div>
@@ -56,10 +56,10 @@ const Card = () => {
           <div className="wave" />
           <div className="wave" />
           <div className="infotop">
-            <img src="images/g4.png" alt="Icon" className="icon y-axis-movement" style={{color: 'black', width: '200px', height: '200px',marginTop: '-140px',marginLeft: '-40px' }} />
-            <div className="name" style={{ marginTop: '-40px', fontSize: '24px', fontWeight: 'bold' ,color: 'black'}}>Community-driven Evolution</div>
+            <img src="images/g4.png" alt="Icon" className="icon y-axis-movement" style={{color: 'white', width: '200px', height: '200px',marginTop: '-140px',marginLeft: '-40px' }} />
+            <div className="name" style={{ marginTop: '-60px', fontSize: '24px', fontWeight: 'bold' ,color: 'white'}}>Community-driven Evolution</div>
             <br></br>
-            <div className="name" style={{ paddingLeft: '20px', paddingRight: '20px',color: 'black' }}> Influence game development and features through community input.
+            <div className="name text-xl leading-5" style={{ paddingLeft: '20px', paddingRight: '20px',color: 'white' }}> Influence game development and features through community input.
             Join events and collaborate with other players.</div>
           </div>
         </div>
@@ -69,10 +69,10 @@ const Card = () => {
           <div className="wave" />
           <div className="wave" />
           <div className="infotop">
-            <img src="images/g5.svg" alt="Icon" className="icon y-axis-movement" style={{ color: 'black',width: '220px', height: '220px',marginTop: '-160px',marginLeft: '-40px' }} />
-            <div className="name" style={{ marginTop: '-40px', fontSize: '24px', fontWeight: 'bold',color: 'black' }}>Real-world </div>
+            <img src="images/g5.svg" alt="Icon" className="icon y-axis-movement" style={{ color: 'white',width: '220px', height: '220px',marginTop: '-160px',marginLeft: '-40px' }} />
+            <div className="name" style={{ marginTop: '-60px', fontSize: '24px', fontWeight: 'bold',color: 'white' }}>Real-world </div>
             <br></br>
-            <div className="name" style={{ paddingLeft: '20px', paddingRight: '20px' ,color: 'black'}}> Blend gaming with reality through AR missions and events. Earn
+            <div className="name text-xl leading-5" style={{ paddingLeft: '20px', paddingRight: '20px' ,color: 'white'}}> Blend gaming with reality through AR missions and events. Earn
             real-world rewards linked to your in-game achievements.</div>
           </div>
         </div>
@@ -147,7 +147,7 @@ const StyledWrapper = styled.div`
   }
 
   .name {
-    font-size: 16px; /* Increased font size */
+    font-size: 20px; /* Increased font size */
     font-weight: 100;
     position: relative;
     top: -2em;
