@@ -8,8 +8,8 @@ import HeroCharacters from '@/components/HeroCharacters';
 import ScrollingCards from '../components/ScrollingCards';
 import Footer from '../components/Footer';
 import WaitlistForm from '@/components/WaitlistForm';
+import RunningText from '@/components/RunningText';
 import { div } from 'three/webgpu';
-
 
 const HomePage: React.FC = () => {
   return (
@@ -20,6 +20,7 @@ const HomePage: React.FC = () => {
           </div>
       </div>
       <HeroSection />
+      <RunningText />
       <FeaturesSection />
       <ScrollingCards />  {/* Add the scrolling cards component here */}
       <WaitlistForm />

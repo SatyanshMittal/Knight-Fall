@@ -61,7 +61,31 @@
     display: none;
   }
 }
+.bg-dark-navy-blue {
+  background-color: #780bc1; /* Replace with the desired navy blue color */
+}
 
+.running-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.running-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: runningText 20s linear infinite;
+}
+
+@keyframes runningText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @layer base {
   * {
     @apply border-border;
