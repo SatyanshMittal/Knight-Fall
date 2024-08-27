@@ -4,11 +4,12 @@ import waves from "./WaveAnimation.svg";
 import Image from 'next/image';
 import { FloatingDockDemo } from './Socials';
 import PlayButton from "@/components/buttons/playbutton"
+import { motion } from 'framer-motion';
 // import Navbar from './Navbar';
 
 const Home: React.FC = () => {
   return (
-    <div className='relative h-screen'>
+    <div className='data-scroll data-scroll-section data-scroll-speed="-.6" relative h-screen'>
       <section
         className={`${styles.homePage} `}
         style={{

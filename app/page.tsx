@@ -1,30 +1,10 @@
 //@ts-nocheck
 import React from 'react';
-import Navbar from '../components/Navbar';
-import HeroSection from '../components/HeroSection';
-import FeaturesSection from '../components/FeaturesSection';
-import RoadmapSection from '../components/RoadmapSection';
-import HeroCharacters from '@/components/HeroCharacters';
-import ScrollingCards from '../components/ScrollingCards';
-import Footer from '../components/Footer';
-import WaitlistForm from '@/components/WaitlistForm';
-import RunningText from '@/components/RunningText';
-import { div } from 'three/webgpu';
-
+import Pages from '../components/Pages'
 const HomePage: React.FC = () => {
   return (
-    <div className='w-full overflow-hidden no-scrollbar relative'>
-      <div className='fixed z-50 top-0 w-full'>
-        <div className='w-full flex justify-center items-center'>
-          <Navbar />
-          </div>
-      </div>
-      <HeroSection />
-      <RunningText />
-      <FeaturesSection />
-      <ScrollingCards />  {/* Add the scrolling cards component here */}
-      <WaitlistForm />
-      <Footer />
+    <div>
+      <Pages/>
     </div>
   );
 };
