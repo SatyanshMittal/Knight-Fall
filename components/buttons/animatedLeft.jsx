@@ -3,9 +3,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = () => {
+  const howitworks = () => {
+    window.open("https://knight-fall.gitbook.io/", "_blank"); // Opens the link in a new tab
+  };
   return (
     <StyledWrapper>
-      <button className="button">How it Works? </button>
+      <button className="button" onClick={howitworks}>How it Works? </button>
     </StyledWrapper>
   );
 };
