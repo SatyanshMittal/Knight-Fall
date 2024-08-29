@@ -3,7 +3,9 @@ import styles from '../styles/Home.module.css'; // Adjust the path as needed
 import waves from "./WaveAnimation.svg";
 import Image from 'next/image';
 import { FloatingDockDemo } from './Socials';
-import PlayButton from "@/components/buttons/playbutton"
+import PlayButton from "@/components/buttons/playbutton";
+import DesktopButton from "@/components/buttons/DesktopButton";
+import AndroidButton from "@/components/buttons/AndroidButton";
 import { motion } from 'framer-motion';
 // import Navbar from './Navbar';
 
@@ -47,8 +49,13 @@ const Home: React.FC = () => {
             <FloatingDockDemo/>
           </div>
 
-<div className={`bottom-28 absolute right-[6%] scale-110 z-20 ${styles.wobble}`}>
-  <PlayButton/>
+          <div className="bottom-28 absolute right-[0%] scale-110 z-20 flex space-x-4">
+  <div className={styles.wobble}>
+    <DesktopButton/>
+  </div>
+  <div className={styles.wobble}>
+    <AndroidButton/>
+  </div>
 </div>
 
           <Image height={1000} width={1000} alt='characters' className='absolute top-14 -right-[340px]' src={"./images/characterasset.svg"} />
