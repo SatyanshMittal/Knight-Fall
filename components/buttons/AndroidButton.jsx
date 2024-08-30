@@ -199,7 +199,7 @@ import styled from "styled-components";
 
 const Button = () => {
   const handleDownload = () => {
-    window.open("https://drive.google.com/file/d/15w318UVDKJ_4UZn2A9HAdVb3g7ewpFu7/view?usp=drive_link", "_blank"); // Opens the link in a new tab
+    window.open("https://drive.google.com/file/d/1p6WzJHwGEVtuq1h5gSRayHEy42GU-4gF/view?usp=sharing", "_blank"); // Opens the link in a new tab
   };
   return (
     <StyledWrapper>
