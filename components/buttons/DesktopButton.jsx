@@ -197,9 +197,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = () => {
-    const handleDownload = () => {
-        window.location.href = "./"; // Replace with the actual path to your APK file
-      };
+  const handleDownload = () => {
+    window.open("https://drive.google.com/file/d/1p6WzJHwGEVtuq1h5gSRayHEy42GU-4gF/view?usp=sharing", "_blank"); // Opens the link in a new tab
+  };
   return (
     <StyledWrapper>
       <button className="cta" onClick={handleDownload}>

@@ -195,11 +195,12 @@
 
 import React from "react";
 import styled from "styled-components";
+// import pc from "../../downloads/knightFall.apk"
 
 const Button = () => {
-    const handleDownload = () => {
-        window.location.href = "./"; // Replace with the actual path to your APK file
-      };
+  const handleDownload = () => {
+    window.open("https://drive.google.com/file/d/15w318UVDKJ_4UZn2A9HAdVb3g7ewpFu7/view?usp=drive_link", "_blank"); // Opens the link in a new tab
+  };
   return (
     <StyledWrapper>
       <button className="cta" onClick={handleDownload}>
